@@ -54,7 +54,7 @@
     const celular = document.getElementById('qf-celular').value.trim();
     const testou = document.querySelector('input[name="qf-testou"]:checked');
     const tempo = document.querySelector('input[name="qf-tempo"]:checked');
-    let msg = `Olá Sabrina Figueiredo, meu nome é ${nome} e tenho interesse em agendar o teste auditivo gratuito. `;
+    let msg = `Olá Sabrina Figueiredo, meu nome é ${nome} e tenho interesse em agendar uma avaliação sem compromisso. `;
     msg += `Celular: ${celular}. `;
     if (testou) msg += `Já testei aparelho auditivo antes: ${testou.value}. `;
     if (tempo) msg += `Tempo com dificuldade auditiva: ${tempo.value}.`;
