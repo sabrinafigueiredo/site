@@ -113,8 +113,18 @@
     100%{ opacity:0; }
   }
   @media (prefers-reduced-motion: reduce){
-    .word-cycle span{ animation:none; opacity:0; }
-    .word-cycle span:first-child{ opacity:1; }
+    /* Keep the headline carousel active on devices that report reduced
+       motion (common on mobile); the other decorative motion stays reduced. */
+    .word-cycle span{
+      animation-name: cycle !important;
+      animation-duration: 6s !important;
+      animation-timing-function: ease-in-out !important;
+      animation-iteration-count: infinite !important;
+      opacity:0;
+    }
+    .word-cycle span:nth-child(1){ animation-delay:0s !important; }
+    .word-cycle span:nth-child(2){ animation-delay:2s !important; }
+    .word-cycle span:nth-child(3){ animation-delay:4s !important; }
   }
   .hero p.lead{ font-size:1.09rem; color: var(--ink-soft); max-width:46ch; margin-bottom: var(--space-3); }
   .hero-badge-row{ margin-bottom: var(--space-3); }
