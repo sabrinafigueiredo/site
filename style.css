@@ -132,8 +132,8 @@
   .hero-credential-line{ display:flex; align-items:center; gap:.7em; font-family: var(--font-mono); font-size:.78rem; color: var(--ink-faint); flex-wrap:wrap; }
   .hero-credential-line .dot{ width:5px; height:5px; border-radius:50%; background: var(--purple-light); }
 
-  .hero-art{ position:relative; aspect-ratio: 4/4.6; border-radius: var(--radius-l); overflow:hidden; }
-  .hero-art img{ width:100%; height:100%; object-fit:cover; object-position: 50% 15%; }
+  .hero-art{ position:relative; aspect-ratio: 4/8.4; border-radius: var(--radius-l); overflow:hidden; }
+  .hero-art img{ width:100%; height:100%; object-fit:cover; object-position: 50% 18%; }
   .hero-art::after{
     content:''; position:absolute; inset:0;
     background: linear-gradient(185deg, rgba(58,75,112,0.12) 0%, rgba(42,54,84,.18) 45%, rgba(85,35,106,.62) 100%);
@@ -327,8 +327,8 @@
 
   @media (max-width:980px){
     .hero-grid{ grid-template-columns:1fr; }
-    .hero-art-wrap{ order:-1; max-width:380px; margin:0 auto; }
-    .hero-art{ aspect-ratio:1/1.05; }
+    .hero-art-wrap{ order:-1; max-width:350px; margin:0 auto; }
+    .hero-art{ aspect-ratio:4/8.4; }
     .about-grid{ grid-template-columns:1fr; }
     .about-portrait{ position:static; max-width:320px; }
     .devices-grid{ grid-template-columns:1fr; }
